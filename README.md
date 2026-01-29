@@ -7,8 +7,8 @@
 * save it
 * and you are ready to go
 
-*url*
-`https://mugic1.github.io/study-stream/`
+*url**
+https://mugic1.github.io/study-stream/
 
 *To install the web app*
 

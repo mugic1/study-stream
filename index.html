@@ -138,6 +138,17 @@
             app.render();
         },
 
+
+        if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    // '/study-stream/' path ka use zaroori hai GitHub Pages ke liye
+    navigator.serviceWorker.register('/study-stream/sw.js')
+      .then(reg => console.log('PWA Registered in Study-Stream!'))
+      .catch(err => console.log('Service Worker Error', err));
+  });
+                          }
+    
+
         save() {
             localStorage.setItem('studyStreamDB', JSON.stringify(app.data.videos));
             app.render();
